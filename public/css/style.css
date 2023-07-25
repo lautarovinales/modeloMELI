@@ -1,0 +1,273 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+.flex-logo-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.flex-logo-search img {
+    width: 50%;
+}
+
+.flex-logo-search input.search {
+    width: 50%;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+}
+
+.search-icon{
+    border-radius: 0px 5px 5px 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.flex-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    color: aliceblue;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.flex-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: #ebebeb;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+article{
+    margin: 10px;
+    max-width: 250px;
+}
+
+article img{
+    width: 100%;
+}
+
+article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        cursor: pointer;
+}
+
+article:hover .truck{
+    transition: 1s;
+    transform: rotate(-90deg);
+}
+
+.flex-price{
+    display: flex;
+    align-items: baseline;
+    column-gap: 20px;
+}
+
+button{
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.truck{
+    width: 2em;
+    height: 2em;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #39b54a;
+}
+
+.art-desc{
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon{
+    font-size: 2em;
+    color: #1259c3;
+    padding-top: 15px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.titulares{
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripciones{
+    font-size: 16px;
+    color: #666;
+}
+
+article .descripciones {
+    display: none;
+  }
+  
+article:hover .descripciones {
+    display: block;
+  }
+
+section:hover .icon{
+    color: #0022AA;
+}
+
+@media screen and (max-width: 360px){
+    ul{
+        display: none;
+    }
+    .descripciones{
+        display: none;
+    }
+
+    .flex-logo-search img{
+        margin-right: 10px;
+    }
+
+    main{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 361px){
+
+    .burger-menu{
+        display: none;
+    }
+
+    .flex-logo-search {
+        display: flex;
+        align-items: center;
+    }
+    
+    .flex-logo-search img {
+        width: 50%;
+    }
+    
+    .flex-logo-search .search {
+        flex: 1;
+        margin-left: 10px;
+    }
+    
+    .flex-cont {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .flex-logo-search{
+        width: 70%;
+    }
+    .flex-cont{
+        width: 30%;
+    }
+
+    .tacs{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .flex-ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul{
+        display: flex;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .flex-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
